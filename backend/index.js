@@ -13,6 +13,7 @@ app.use(
     origin: "https://frontend-book-store-one.vercel.app",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
 
