@@ -15,7 +15,6 @@ const EditBook = () => {
   const { id } = useParams();
   const { enqueueSnackbar } = useSnackbar();
   const baseUrl = BASE_URL;
-  axios.defaults.withCredentials = true;
 
   useEffect(() => {
     setLoading(true);

@@ -14,7 +14,6 @@ const CreateBook = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar();
-  axios.defaults.withCredentials = true;
 
   const handleSaveBook = async () => {
     const data = {
