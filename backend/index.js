@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 app.use(
   cors({
-    origin: `http://localhost:5173`,
+    origin: `https://frontend-book-store-e9vnc11bw-irsanjam.vercel.app/`,
     methods: [`PUT`, `DELETE`, `GET`, `POST`],
     allowedHeaders: [`Content-Type`],
   })
