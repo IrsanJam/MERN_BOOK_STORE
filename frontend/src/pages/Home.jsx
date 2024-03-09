@@ -13,6 +13,7 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [showType, setShowType] = useState("table");
   const baseUrl = BASE_URL;
+  axios.defaults.withCredentials = true;
 
   useEffect(() => {
     setLoading(true);
