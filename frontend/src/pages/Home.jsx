@@ -6,16 +6,18 @@ import { Link } from "react-router-dom";
 import { MdOutlineAddBox } from "react-icons/md";
 import BookCard from "../components/home/BookCard";
 import BookTable from "../components/home/BookTable";
+import { BASE_URL } from "../../config";
 
 const Home = () => {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showType, setShowType] = useState("table");
+  const baseUrl = BASE_URL;
 
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5555/books`)
+      .get(`${baseUrl}/books`)
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
