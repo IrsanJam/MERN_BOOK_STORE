@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 app.use(
   cors({
-    origin: [`https://frontend-book-store-one.vercel.app/`, `http://localhost:5173/`],
+\    origin: [`https://frontend-book-store-one.vercel.app/`, `http://localhost:5173/`],
     methods: [`PUT`, `DELETE`, `GET`, `POST`],
     credentials: true,
     allowedHeaders: [`Content-Type`],
