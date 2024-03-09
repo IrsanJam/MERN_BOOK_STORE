@@ -13,7 +13,6 @@ const ShowBook = () => {
   const baseUrl = BASE_URL;
 
   useEffect(() => {
-    axios.defaults.withCredentials = true;
     setLoading(true);
     axios
       .get(`${baseUrl}/${id}`)
