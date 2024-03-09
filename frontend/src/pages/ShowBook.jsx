@@ -15,7 +15,7 @@ const ShowBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`${baseUrl}/${id}`)
+      .get(`${baseUrl}books/${id}`)
       .then((response) => {
         setBook(response.data);
         setLoading(false);
