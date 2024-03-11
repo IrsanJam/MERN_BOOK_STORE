@@ -40,7 +40,7 @@ const CreateBook = () => {
       <BackButton />
       <h1 className="text-3xl my-4">Create Book</h1>
       {loading ? <Spinner /> : ""}
-      <div className="flex flex-col border-green-200 border-2 rounded-xl w-[600px] p-4 mx-auto">
+      <div className="flex flex-col border-green-200 border-2 rounded-xl md:w-[600px] w-full p-4 mx-auto">
         <div className="my-4">
           <label className="text-xl mr-4 text-gray-500">Title</label>
           <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="border-2 rounded-md border-slate-100 px-4 py-2 w-full" />
